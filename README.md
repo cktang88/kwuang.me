@@ -8,6 +8,12 @@ yarn watch # dev
 yarn debug # debug
 ```
 
+### Thought about using a CMS
+
+- tried Git-based CMS that could output Markdown: Netlify CMS, Forestry.io, but both didn't give enough improvements over content management than just plain Markdown. Their main advantage were being able to go to `/admin` and just edit content right in your web browser.
+  - Since I'm planning on just devving locally, I get content previews via 11ty's hot-reload
+  - for WYSIWYG, can just use **https://typora.io/** (which also comes with word count, focus mode, auto pair, outline panel)
+
 ### Implementation Notes
 
 - `about/index.md` shows how to add a content page.
