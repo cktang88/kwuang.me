@@ -44,15 +44,37 @@
     </main>
 
     <footer>
+
+      {# <ul class="nav">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul> #}
       <p>
-        <em>This is an
-          <a href="https://www.11ty.io/">Eleventy project</a>
+        <span>
+          <a href="https://twitter.com/cktang_88">Twitter</a>
+        </span>
+        <span>
+          <a href="https://github.com/cktang88">Github</a>
+        </span>
+        <span>
+          <a href="/feed/feed.xml">RSS Feed</a>
+        </span>
+        {# <em>This is an
+          <a href="https://www.11ty.io/">11ty project</a>
           created from the
           <a href="https://github.com/11ty/eleventy-base-blog">
             <code>eleventy-base-blog</code>
-            repo</a>.</em>
+            repo</a>.</em> #}
       </p>
+      <p>
+        <strong>
+          :)
+        </strong>
+      </p>
+      <!-- Current page: {{ page.url | url }} -->
     </footer>
-    <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>
