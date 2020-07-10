@@ -5,10 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: ''
+  path: img
   label: posts
   create: all
-  match: posts/*
+  match: posts/*.md
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
