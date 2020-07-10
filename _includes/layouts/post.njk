@@ -3,7 +3,15 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
+{{date | readableDate}}
+<br>
+{% for tag in tags %}
+    <span>{{tag}}</span>
+    {% endfor%}
+    {# {{description}} #}
 
-{{ content | safe }}
+    {{ content | safe }}
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+    <p>
+        <a href="{{ '/' | url }}">← Home</a>
+    </p>
