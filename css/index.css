@@ -4,8 +4,8 @@
   --lightgray: #e0e0e0;
   --gray: #c0c0c0;
   --darkgray: #333;
-  --navy: #17050f;
-  --blue: #082840;
+  --navy: #3f1557;
+  --blue: #2b528f;
   --white: #fff;
 }
 * {
@@ -18,17 +18,24 @@ body {
   font-family: system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--lightgray);
-  /* color: var(--white); */
-  /* background-color: #363b40; */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 p:last-child {
   margin-bottom: 0;
 }
-p,
+/* 600px /16 */
+/* p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
-}
+  max-width: 37.5em;
+} */
+
 p,
 .tmpl-post li {
   line-height: 1.45;
@@ -41,12 +48,23 @@ a[href]:visited {
 }
 main {
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+main > div {
+  width: 1000px;
+  background-color: whitesmoke;
+  padding: 2em;
 }
 main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dashed var(--blue);
+}
+footer {
+  border-top: 1px dashed var(--blue);
 }
 header:after {
   content: "";
@@ -68,9 +86,10 @@ code {
     "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
     "Courier New", Courier, monospace;
   line-height: 1.5;
+  background-color: var(--lightgray);
 }
 pre {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 1.375;
   direction: ltr;
   text-align: left;
@@ -86,7 +105,6 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: 0.5em 0;
-  background-color: #f6f6f6;
 }
 header,
 footer {
@@ -97,12 +115,13 @@ footer {
   left: 0;
   bottom: 0;
   min-width: 100vw;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
   display: flex;
   justify-content: space-between;
 }
 footer > p > span {
-  padding: 1em;
+  padding-right: 1em;
 }
 /* footer > .nav {
   align-self: right;
@@ -201,6 +220,11 @@ footer > p > span {
 .tmpl-home .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
+}
+
+.tagslist {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* Tags */

@@ -4,10 +4,12 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 {{date | readableDate}}
-<br>
-{% for tag in tags %}
-    <span>{{tag}}</span>
-    {% endfor%}
+<div class='tagslist'>
+    {% for tag in tags %}
+        <span class='tag'>{{tag}}</span>
+        {% endfor%}
+    </div>
+
     {# {{description}} #}
 
     {{ content | safe }}
