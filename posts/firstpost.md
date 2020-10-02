@@ -75,6 +75,8 @@ Apollo-client is now on [v3.0](https://github.com/apollographql/apollo-client/re
 
 [Apollo-explorer](https://www.apollographql.com/blog/introducing-the-apollo-explorer/) was introduced on June 30, 2020. Apollo-explorer was [renamed](https://www.apollographql.com/blog/graph-manager-is-now-studio/) from Apollo Graph Manager, which was introduced last year.
 
+Update (10/1/2020): Nexus Framework is now [no longer maintained](https://github.com/prisma-labs/graphql-framework-experiment/issues/1432), so that the Nexus team could focus on `@nexus/schema` again. The nexus plugin for prisma will continue to work.
+
 ## Alternative frameworks
 
 On the other hand, there are software that seek to be a batteries-included GraphQL API layer over an existing database, with little or no configuration or coding involved, such as [Hasura](https://hasura.io/) and [Postgraphile](https://www.graphile.org/postgraphile/), both of which are open-source.
