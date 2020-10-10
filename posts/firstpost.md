@@ -77,6 +77,8 @@ Apollo-client is now on [v3.0](https://github.com/apollographql/apollo-client/re
 
 Update (10/1/2020): Nexus Framework is now [no longer maintained](https://github.com/prisma-labs/graphql-framework-experiment/issues/1432), so that the Nexus team could focus on `@nexus/schema` again. The nexus plugin for prisma will continue to work.
 
+Update (10/9/2020): [trojanowski/react-apollo-hooks](https://github.com/trojanowski/react-apollo-hooks) became [deprecated in Aug. 2019](https://github.com/trojanowski/react-apollo-hooks/commit/ef67f732b639cb359cb31838ade5e4b513019458) when the [official react-apollo hooks](https://www.npmjs.com/package/@apollo/react-hooks) released a stable version, which then was moved inside [Apollo Client](https://github.com/apollographql/apollo-client) in January 2020.
+
 ## Alternative frameworks
 
 On the other hand, there are software that seek to be a batteries-included GraphQL API layer over an existing database, with little or no configuration or coding involved, such as [Hasura](https://hasura.io/) and [Postgraphile](https://www.graphile.org/postgraphile/), both of which are open-source.
